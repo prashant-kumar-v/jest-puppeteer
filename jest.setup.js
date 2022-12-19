@@ -1,2 +1,2 @@
-jest.setTimeout(30000);
+jest.setTimeout(40000);
 jest.retryTimes(process.env.RETRIES, { logErrorsBeforeRetry: true });

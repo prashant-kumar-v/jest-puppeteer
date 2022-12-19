@@ -1,6 +1,8 @@
 const cartPageLocators = {
-    addToCartBtn: `//*[text()="ADD TO CART"]`,
-    totalAmount: `//*[text()=" ₹66,028"]`
+    addToCartBtn: `//*[text()="Add to cart"]`,
+    totalAmount: `//*[text()=" ₹63,068"]`,
+    removeProduct: `//div[text()="Remove"]`,
+    removeConfirmBtn: `//div[text()="Cancel"]/following-sibling::div[text()="Remove"]`
 }
 
 module.exports = { cartPageLocators };

@@ -24,5 +24,10 @@ async function getValue(page, locator) {
     return data;
 }
 
+async function delay(ms) {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, ms)
+    })
+}
 
-module.exports = { newTabInstance, waitAndClick, waitAndType, getValue };
+module.exports = { newTabInstance, waitAndClick, waitAndType, getValue, delay };

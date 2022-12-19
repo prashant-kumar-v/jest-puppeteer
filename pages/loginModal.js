@@ -1,6 +1,10 @@
 const { homePageLocators } = require("./locators/homePageLocators");
 const helpers = require("../helpers/helpers");
 
+async function closeLoginModal(page) {
+    await helpers.waitAndClick(page, homePageLocators.loginModal.cross);
+}
+
 async function fillLoginFormAndSubmit(page, args) {
     const usr = await helpers.waitAndClick(page, homePageLocators.loginModal.username);
     await usr.type(args.username);
@@ -12,9 +16,8 @@ async function fillLoginFormAndSubmit(page, args) {
 async function errorVerify(page, args) {
     for (const key in args) {
         const val = await helpers.getValue(page, homePageLocators.loginModal[key]);
-        console.log(args[key]);
         expect(val).toEqual(args[key]);
     }
 }
 
-module.exports = { fillLoginFormAndSubmit, errorVerify, };
+module.exports = { closeLoginModal, fillLoginFormAndSubmit, errorVerify, };
