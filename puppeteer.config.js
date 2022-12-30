@@ -4,5 +4,5 @@ module.exports.config = {
         defaultViewport: null,
         args: ["--start-maximized"]
     },
-    browserContext: process.env.INCOGNITO === 'incognito' ? 'incognito' : 'default',
+    browserContext: process.env.INCOGNITO === 'incognito' ? 'incognito' : process.env.INCOGNITO === 'default' ? 'default' : process.env.INCOGNITO,
 }

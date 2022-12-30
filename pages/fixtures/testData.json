@@ -1,0 +1,31 @@
+{
+    "loginForm": {
+        "username": "prashantstarvarshney28@gmail.com",
+        "password": "123",
+        "usernameError": "Your username or password is incorrect",
+        "passwordError": "Please enter Password"
+    },
+    "product1": {
+        "productName": "APPLE iPhone 13 (Midnight, 128 GB)",
+        "highlights": [
+            "128 GB ROM",
+            "15.49 cm (6.1 inch) Super Retina XDR Display",
+            "12MP + 12MP | 12MP Front Camera",
+            "A15 Bionic Chip Processor"
+        ],
+        "totalPrice": "62,068",
+        "removeCartMsg": "Successfully removed APPLE iPhone 13 (Midnight, 128 GB) from your cart"
+    },
+    "product2": {
+        "productName": "POCO M4 5G (Power Black, 128 GB)",
+        "highlights": [
+            "6 GB RAM | 128 GB ROM | Expandable Upto 512 GB",
+            "16.71 cm (6.58 inch) Full HD+ Display",
+            "50MP + 2MP | 8MP Front Camera",
+            "5000 mAh Lithium Ion Polymer Battery",
+            "Mediatek Dimensity 700 Processor"
+        ],
+        "totalPrice": "13,048",
+        "removeCartMsg": "Successfully removed POCO M4 5G (Power Black, 128 GB) from your cart"
+    }
+}

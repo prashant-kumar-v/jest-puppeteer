@@ -16,6 +16,7 @@ module.exports = async function () {
         throw new Error(`browserContext should be either 'incognito' or 'default'. Received '${config.browserContext}'`)
     }
     const page = await this.global.context.newPage();
-    this.global.browser = browser;
-    this.global.page = page;
+    global.browser = browser;
+    global.context = this.global.context
+    global.page = page;
 };
